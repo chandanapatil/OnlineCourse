@@ -1,0 +1,15 @@
+Python program to return a list containing first and last element using list slicing method.
+
+Description:
+Take a list of integers and return a list containing first and last element.
+
+
+Program:
+test_list = [7,3,4, 5, 6, 8] 
+print ("The original list is : " + str(test_list)) 
+res = [ test_list[0], test_list[-1] ] 
+print ("The first and last element of list are : " + str(res)) 
+
+Output:
+The original list is : [7, 3, 4, 5, 6, 8]
+The first and last element of list are : [7, 8]

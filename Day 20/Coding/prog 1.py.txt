@@ -1,0 +1,18 @@
+Python program to find whether a string is a palindrome or not.
+
+Program:
+def isPalindrome(s):
+    return s== s[::-1]
+s=input()
+ans=isPalindrome(s)
+if ans:
+    print("Yes")
+else:
+    print("No")
+
+Output:
+aba
+Yes
+
+abb
+No

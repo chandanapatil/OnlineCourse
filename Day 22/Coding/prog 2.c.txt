@@ -1,0 +1,50 @@
+Write a c program to print the sum of boundary elements of a matrix.
+
+Program:
+#include<stdio.h>
+#include<limits.h>
+int main()
+{
+    int m, n, sum = 0;
+    printf("\nEnter the order of the matrix : ");
+    scanf("%d %d",&m,&n);
+    int i, j;
+    int mat[m][n];
+    printf("\nInput the matrix elements\n");
+    for(i = 0; i < m; i++)
+    {
+        for(j = 0; j < n; j++)
+            scanf("%d",&mat[i][j]);
+    }
+    printf("\nBoundary Matrix\n");
+    for(i = 0; i < m; i++)
+    {
+        for(j = 0; j < n; j++)
+        {
+            if (i == 0||j == 0||i == n-1||j == n-1)
+            {
+                printf("%d ", mat[i][j]);
+                sum = sum + mat[i][j];
+            }
+            else
+                printf(" ");
+        }
+        printf("\n");
+    }
+    printf("\nSum of boundary is %d", sum);
+}
+
+Output:
+Enter the order of the matrix : 3 3                                                                                                                                            
+                                                                                                                                                                               
+Input the matrix elements                                                                                                                                                      
+2 3 6                                                                                                                                                                          
+8 4 9                                                                                                                                                                          
+5 1 7                                                                                                                                                                          
+                                                                                                                                                                               
+Boundary Matrix                                                                                                                                                                
+2 3 6                                                                                                                                                                          
+8  9                                                                                                                                                                           
+5 1 7                                                                                                                                                                          
+                                                                                                                                                                               
+Sum of boundary is 41    

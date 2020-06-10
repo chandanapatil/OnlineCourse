@@ -1,0 +1,21 @@
+Python program to check whether a given number is a fibonacci number or not.
+
+Program:
+import math
+def isPerfectSquare(x):
+   s = int(math.sqrt(x))
+   return s*s == x
+def isFibonacci(n):
+   return isPerfectSquare(5*n*n + 4) or isPerfectSquare(5*n*n - 4)
+for i in range(1,6):
+   if (isFibonacci(i) == True):
+      print (i,"is a Fibonacci Number")
+   else:
+      print (i,"is a not Fibonacci Number")
+
+Output:
+1 is a Fibonacci Number
+2 is a Fibonacci Number
+3 is a Fibonacci Number
+4 is a not Fibonacci Number
+5 is a Fibonacci Number

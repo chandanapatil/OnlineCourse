@@ -1,0 +1,22 @@
+Write a python function that converts a string to all uppercase.
+
+sample Input:
+Given string is : HeLlo
+Output string is: HELLO
+
+Program:
+def upp(s):
+    c=0
+    for i in s:
+        if i.upper()==i:
+            c=c+1
+    if(c>=2):
+       print("The output string is:",s.upper())
+    else:
+        print("The output string is:",s)
+s=str(input("Enter the string:"))
+upp(s)
+
+Output:
+Enter the string:PyThon
+The output string is: PYTHON
